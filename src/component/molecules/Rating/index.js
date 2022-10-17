@@ -11,7 +11,7 @@ const Ratings = ({ count, onChange = null, disabled }) => {
 
 	useEffect(() => {
 		onChange(selected);
-	}, [selected]);
+	}, [selected, onChange]);
 
 	const _setSelection = (item) => {
 		if (!disabled) {
