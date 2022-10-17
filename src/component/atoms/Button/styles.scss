@@ -1,0 +1,35 @@
+@import "../../../scss/variable";
+
+.btn {
+	display: flex;
+	border: none;
+	justify-content: center;
+	align-items: cneter;
+	background-color: $orange-color;
+	color: white;
+	padding: 12px 0;
+	font-size: 1rem;
+	gap: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border-radius: 10rem;
+	cursor: pointer;
+	transition: 0.5s;
+	span {
+		color: white;
+	}
+	i {
+		transform-origin: center center;
+	}
+}
+
+.btn:hover {
+	background-color: $white-color;
+	color: $orange-color;
+}
+
+.btn:disabled {
+	background-color: $medium-gray-color;
+	color: $dark-blue-color;
+	content: "Loading";
+}
